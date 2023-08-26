@@ -1,5 +1,4 @@
 # swapp
-#### Video Demo:  <https://www.youtube.com/watch?v=SC00cjbSojo>
 #### Description:
 This is a web application for swapping your unused items which i made both for cs50 final project and preparation for my future projects
 [View the full assignment description](https://cs50.harvard.edu/x/2023/project/)
