@@ -42,8 +42,12 @@ CREATE TABLE users (
  	hash TEXT NOT NULL);
 
 ## Explanation
-Initially, user needs to register to our site by providing username which is not taken and a password. After this, user's username and password will be saved in to database. Then user needs to log in by providing user's correct username and pass.
+Initially, user needs to register to our site by providing username which is not taken and a password. 
+
+After this, user's username and password will be saved in to database. Then user needs to log in by providing user's correct username and pass.
+
 After logging in user encounters with the index page where all the items in the database are shown with the informations item's owner, photo, brand, condition and color.
+
 There is my_items page in which user can see their items and an area that has big addition sign which says "Append an item". This sign redirects the user to the sell page.
 At the sell page, user can upload an item, by providing item's name,brand, color ,and condition. After uploading, site redirects the user to the my_items page again and saying 'item successfully uploaded and displayed below'
 Lastly, there is a search page which can be improved, Now it can just filter the items by color and condition. By improvements, it can be search by all the features of the item, username and relevance.
