@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block link %}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+{% endblock %}
+
+
+{% block title %}
+history
+{% endblock %}
+
+{% block main %}
+
+{% for item in items %}
+<div class="div1">
+    <ul>
+        <li>@{{ item.username }}</li>
+        <img id="my-img" src="{{ url_for('display_image', filename=item.title) }}">
+        <li>Name: {{ item.name }}</li>
+        <li>Brand: {{ item.brand }}</li>
+        <li>Color: <span style="color:{{item.color}};">{{ item.color }}</span></li>
+        <li>Condition: {{ item.condition }}</li>
+    </ul>
+</div>
+{% endfor %}
+{% endblock %}

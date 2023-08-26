@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block title %}
+quote
+{% endblock %}
+
+{% block main %}
+<div class="row">
+    <h2 style="color: white;">Search by color or condition</h2>
+    <br>
+    <div id="select-file">
+        <form method="post" action="/search" enctype="multipart/form-data">
+            <div class="mb-3">
+                <select class="form-select mx-auto w-auto" name="color">
+                    <option disabled="" selected="">Color</option>
+                    {% for color in colors %}
+                    <option value="{{ color }}" style="color: {{ color }}; background-color:rgb(33,37,41);">{{ color }}
+                        &#9632;</option>
+                    {% endfor%}
+                </select>
+            </div>
+            <div class="mb-3">
+                <select class="form-select mx-auto w-auto" name="condition">
+                    <option disabled="" selected="">Condition</option>
+                    <option value="Brand new">Brand new</option>
+                    <option value="new">New</option>
+                    <option value="slightly used">Slightly used</option>
+                </select>
+            </div>
+            <button class="btn sell-input" type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+{% if items%}
+{% for item in items %}
+<div class="div1">
+    <ul>
+        <li>@{{ item.username }}</li>
+        <img id="my-img" src="{{ url_for('display_image', filename=item.title) }}">
+        <li>Name: {{ item.name }}</li>
+        <li>Brand: {{ item.brand }}</li>
+        <li>Color: <span style="color:{{item.color}};">{{ item.color }}</span></li>
+        <li>Condition: {{ item.condition }}</li>
+    </ul>
+</div>
+{% endfor %}
+{% endif %}
+{% endblock %}

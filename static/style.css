@@ -1,0 +1,123 @@
+/* Size for brand */
+nav .navbar-brand {
+    font-size: xx-large;
+}
+
+/* Colors for brand */
+nav .navbar-brand .blue {
+    color: #537fbe;
+}
+
+nav .navbar-brand .red {
+    color: #ea433b;
+}
+
+nav .navbar-brand .yellow {
+    color: #f5b82e;
+}
+
+nav .navbar-brand .green {
+    color: #2e944b;
+}
+
+input[type=text],
+input[type=password],
+.sell-input {
+    border: 3px solid white;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+.sell-input:focus {
+    box-shadow: 0 0 0 0;
+    border: 3px solid #2e944b;
+    border-color: #2e944b;
+    transition: 0.5s all ease-in-out;
+}
+
+button[type=submit],
+.sell-input {
+    background-color: rgb(0, 191, 11);
+    border-color: rgb(0, 191, 11);
+    color: white;
+}
+
+button[type=submit]:hover,
+.sell-input:hover {
+    color: white;
+    background-color: rgb(0, 191, 11);
+}
+
+button[type=submit]:active,
+.sell-input:active {
+    box-shadow: 0 0 0 0;
+}
+
+button[type=submit]::after,
+.sell-input::after {
+    box-shadow: 0 0 0 0;
+}
+
+#error {
+    color: rgb(251, 111, 111);
+    margin-top: -1rem;
+}
+
+#select-file {
+    width: 33.3%;
+    margin: auto;
+}
+
+.margin {
+    margin: 1rem;
+}
+
+.table-text {
+    color: white;
+}
+
+#my-img {
+    margin: 1rem;
+    height: 15rem;
+    border: 3px solid #ccc;
+    max-width: 96%
+}
+.append-img{
+    border: 0px;
+    height: calc(15rem + 113px);
+}
+.my_css {
+    color: white;
+}
+
+.div1 {
+    width: 40%;
+    background-color:rgb(33,37,41);
+    display: inline-block;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    .div1{
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+ul {
+    list-style-type: none;
+}
+li {
+    color: white;
+    font-size: large;
+    /* font-weight: ; */
+}
+
+.div2{
+    width: 40%;
+    background-color:rgb(33,37,41);
+    display: inline-block;
+    margin: 1rem;
+    padding: 1rem;
+}

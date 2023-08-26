@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Log In
+{% endblock %}
+
+{% block main %}
+<div>
+    <form action="/login" method="post">
+        <img src="../static/2.jpg" alt="alver" width=200rem>
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="username" name="username"
+                placeholder="Username" type="text">
+        </div>
+        {% if top == 403 %}
+        <p id="error">{{ bottom }}</p>
+        {% endif %}
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" id="password" name="password" placeholder="Password"
+                type="password">
+        </div>
+        {% if top == 405 %}
+        <p id="error">{{ bottom }}</p>
+        {% endif %}
+        <button class="btn btn-primary" type="submit"
+            style="background-color:rgb(0,191,11);border-color:rgb(0,191,11)">Log In</button>
+    </form>
+    <br>
+    <!-- code u if ile kullan (if code = 300 username altına, değilde password altına) -->
+
+    <footer class="mb-5 small text-center text-muted">
+        Secured swap &#10004;
+    </footer>
+</div>
+{% endblock %}

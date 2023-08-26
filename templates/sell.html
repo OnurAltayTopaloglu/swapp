@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+quote
+{% endblock %}
+
+{% block main %}
+<div class="row">
+    <h2 style="color: white;">Upload a photo of your item</h2>
+    <br>
+    <div id="select-file">
+        <form method="post" action="/sell" enctype="multipart/form-data">
+            <dl>
+                <input type="file" name="file" class="form-control sell-input" autocomplete="off" required>
+            </dl>
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto margin" id="name" name="name"
+                placeholder="Name of the item" type="text">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto margin" id="brand" name="brand"
+                placeholder="Brand of the item" type="text">
+            <div class="mb-3">
+                <select class="form-select mx-auto w-auto" name="color">
+                    <option disabled="" selected="">Color</option>
+                    {% for color in colors %}
+                    <option value="{{ color }}" style="color: {{ color }}; background-color:rgb(33,37,41);">{{ color }}
+                        &#9632;</option>
+                    {% endfor%}
+                </select>
+            </div>
+            <div class="mb-3">
+                <select class="form-select mx-auto w-auto" name="condition">
+                    <option disabled="" selected="">Condition</option>
+                    <option value="Brand new">Brand new</option>
+                    <option value="new">New</option>
+                    <option value="slightly used">Slightly used</option>
+                </select>
+            </div>
+            <button class="btn sell-input" type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
