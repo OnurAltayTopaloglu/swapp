@@ -26,7 +26,7 @@ I've wrote all the functions except login (from prev. project) at app.py by usin
 * Run command 'flask run' to open on localhost
 * When the finance site opens in your browser, register for a new account (upper right corner) to create your own stock portfolio
 
-* run: sqlite3 swapp.db and
+#### run: sqlite3 swapp.db 
 * CREATE TABLE upload (
  	id INTEGER PRIMARY KEY AUTOINCREMENT,
  	user_id INTEGER NOT NULL,
