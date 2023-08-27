@@ -1,6 +1,7 @@
 # swapp
 #### Description:
 This is a web application for swapping your unused items which i made both for cs50 final project and preparation for my future projects
+
 [View the full assignment description](https://cs50.harvard.edu/x/2023/project/)
 
 ## Technologies
@@ -44,13 +45,13 @@ I've wrote all the functions except login (from prev. project) at app.py by usin
 ## Explanation
 Initially, user needs to register to our site by providing username which is not taken and a password. 
 
-After this, user's username and password will be saved in to database. Then user needs to log in by providing user's correct username and pass.
+After this, user's username and password will be saved in the database. Then user needs to log in by providing user's correct username and pass.
 
-After logging in user encounters with the index page where all the items in the database are shown with the informations item's owner, photo, brand, condition and color.
+After logging in user encounters with the index page where all the items in the database are shown with the information item's owner, photo, brand, condition and color.
 
-There is my_items page in which user can see their items and an area that has big addition sign which says "Append an item". This sign redirects the user to the sell page.
+There is a my_items page in which user can see their items and an area that has big addition sign which says "Append an item". This sign redirects the user to the sell page.
 
-At the sell page, user can upload an item, by providing item's name,brand, color ,and condition. After uploading, site redirects the user to the my_items page again and saying 'item successfully uploaded and displayed below'
+On the sell page, user can upload an item, by providing the item's name, brand, color , and condition. After uploading, site redirects the user to the my_items page again and saying "Item successfully uploaded and displayed below"
 
-Lastly, there is a search page which can be improved, Now it can just filter the items by color and condition. By improvements, it can be search by all the features of the item, username and relevance.
+Lastly, there is a search page which can be improved. Now, it can just filter the items by color and condition. By improvements, it can be searched by all the features of the item, username and relevance.
 
