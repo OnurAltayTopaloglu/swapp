@@ -26,7 +26,7 @@ I've wrote all the functions except login (from prev. project) at app.py by usin
 * When the finance site opens in your browser, register for a new account (upper right corner) to create your own stock portfolio
 
 * run: sqlite3 swapp.db and
-CREATE TABLE upload (
+* CREATE TABLE upload (
  	id INTEGER PRIMARY KEY AUTOINCREMENT,
  	user_id INTEGER NOT NULL,
     username TEXT NOT NULL;
@@ -36,7 +36,7 @@ CREATE TABLE upload (
  	color TEXT NOT NULL,
  	condition TEXT NOT NULL);
 
-CREATE TABLE users (
+* CREATE TABLE users (
  	id INTEGER PRIMARY KEY AUTOINCREMENT,
  	username TEXT NOT NULL,
  	hash TEXT NOT NULL);
@@ -49,6 +49,8 @@ After this, user's username and password will be saved in to database. Then user
 After logging in user encounters with the index page where all the items in the database are shown with the informations item's owner, photo, brand, condition and color.
 
 There is my_items page in which user can see their items and an area that has big addition sign which says "Append an item". This sign redirects the user to the sell page.
+
 At the sell page, user can upload an item, by providing item's name,brand, color ,and condition. After uploading, site redirects the user to the my_items page again and saying 'item successfully uploaded and displayed below'
+
 Lastly, there is a search page which can be improved, Now it can just filter the items by color and condition. By improvements, it can be search by all the features of the item, username and relevance.
 
